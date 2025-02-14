@@ -1,0 +1,50 @@
+program: train.py
+method: bayes
+project: Zhuo-collab-SPOTER-Sweep
+metric:
+  name: best-accuracy
+  goal: maximize
+parameters:
+  augmentations_probability:
+    min: 0.20
+    max: 0.75
+  rotate_angle:
+    min: 5
+    max: 20
+  perspective_transform_ratio:
+    min: 0.05
+    max: 0.2
+  squeeze_ratio:
+    min: 0.05
+    max: 0.4
+  arm_joint_rotate_angle:
+    min: 1
+    max: 10
+  arm_joint_rotate_probability:
+    min: 0.2
+    max: 0.5
+command:
+  - python3
+  - "-m"
+  - train
+  - "--epochs"
+  - 130
+  -  "--num_classes"
+  - 100
+  - "--lr"
+  - 0.001
+  - "--experiment_name"
+  - "zhuo-repro"
+  - "--training_set_path"
+  - "/storage/plzen4-ntis/home/mbohacek/spoter-zhuo/WLASL100_zhuo_train.csv"
+  - "--testing_set_path"
+  - "/storage/plzen4-ntis/home/mbohacek/spoter-zhuo/WLASL100_zhuo_test.csv"
+  - "--validation_set_path"
+  - "/storage/plzen4-ntis/home/mbohacek/spoter-zhuo/WLASL100_zhuo_val.csv"
+  - "--validation_set"
+  - "from-file"
+  - "--wandb_key"
+  - "beb8925bb5b17aaecd40139da4c299f76753291e"
+  - "--wandb_entity"
+  - "matyasbohacek"
+  - ${args}
