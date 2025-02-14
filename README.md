@@ -1,4 +1,4 @@
-COVER IMAGE TBD
+<img width="1727" alt="sign-language-dictionary-banner" src="https://github.com/user-attachments/assets/c8b2f3e6-c42a-410c-8fd4-edaef9f4482f" />
 
 # Towards an AI-Driven Video-Based American Sign Language Dictionary: Exploring Design and Usage Experience with Learners
 
