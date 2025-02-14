@@ -33,7 +33,7 @@ pip install -r requirements.txt
 
 4. Set up hosting for the [`detailed-analysis`](detailed-analysis/) web interface. You can host this on localhost or remote (FTP hosting was tested to work).
 
-5. Then, proceed to `main-dictionary-interface/app.py` and update `DETAILED_ANALYSIS_URL` and `GIFS_DIR_URL`. Optionally, update `LOGO_PATH_URL` and `CONTACT_EMAIL` in `main-dictionary-interface/constants.py`. Then, proceed to `detailed-analysis/index.html` and update `` and ``.
+5. Then, proceed to `main-dictionary-interface/app.py` and update `DETAILED_ANALYSIS_URL` and `GIFS_DIR_URL`. Optionally, update `LOGO_PATH_URL` and `CONTACT_EMAIL` in `main-dictionary-interface/constants.py`. Then, proceed to `detailed-analysis/index.html` and update `DETAILED_ANALYSIS_URL`, `GLOSS_SPECIFIER_URL`, `GIFS_DIR_URL`, and `HANDSHAPE_IMG_DIR_URL`.
 
 6. Start the dictionary (web interface):
 
