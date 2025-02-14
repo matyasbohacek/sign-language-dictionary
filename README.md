@@ -31,7 +31,11 @@ conda activate sign-language-dictionary
 pip install -r requirements.txt
 ```
 
-4. Start the dictionary (web interface):
+4. Set up hosting for the [`detailed-analysis`](detailed-analysis/) web interface. You can host this on localhost or remote (FTP hosting was tested to work).
+
+5. Then, proceed to `main-dictionary-interface/app.py` and update `DETAILED_ANALYSIS_URL` and `GIFS_DIR_URL`. Optionally, update `LOGO_PATH_URL` and `CONTACT_EMAIL` in `main-dictionary-interface/constants.py`. Then, proceed to `detailed-analysis/index.html` and update `DETAILED_ANALYSIS_URL`, `GLOSS_SPECIFIER_URL`, `GIFS_DIR_URL`, and `HANDSHAPE_IMG_DIR_URL`.
+
+6. Start the dictionary (web interface):
 
 ```shell
 python -m app
@@ -39,7 +43,9 @@ python -m app
 
 ## Features
 
-**Feature.** Description
+**Main Dictionary Interface.** Located in `main-dictionary-interface`, this Python-based web interface allows users to upload or record a video of a sign and query the dictionary using an AI model for sign recognition. Users can adjust their recordings directly in the web app. The top-7 most likely signs are presented and users can navigate to the Detailed Analysis interface to see the rest.
+
+**Detailed Analysis.** Located in `detailed-analysis`, this HTML-based web interface with cmponents of PyScript expands on the result presented in the Main Dictionary Interface by displaying the remaining predictions in a scrollable grid, ranked by likelihood. Each entry includes a reference video, a textual translation, a probability score, and metadata such as hand movement, number of hands, and location. Users can filter results by linguistic attributes to refine searches.
 
 ## Citation
 
