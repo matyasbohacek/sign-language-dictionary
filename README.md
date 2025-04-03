@@ -8,7 +8,7 @@ Searching for unfamiliar American Sign Language (ASL) signs is challenging for l
 
 > [See paper]() — [Contact us](mailto:maty-at-stanford-dot-edu)
 > 
-> _Pre-print released on arXiv_
+> _Accepted to Web4All colocated with ACM WWW'25_
 
 ## Getting Started
 
